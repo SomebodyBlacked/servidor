@@ -33,6 +33,10 @@ app.get("/users/:id", (req, res) => {
   }
 });
 
+app.get("*", (req, res) => {
+  res.status(404).json({ error: "Page not found" });
+});
+
 app.listen(port, () => {
   console.log(`Servidor ejecutándose en http://localhost:${port}/`);
 });
