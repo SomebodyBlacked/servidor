@@ -29,7 +29,7 @@
         web = {
           # Example: run "npm run dev" with PORT set to IDX's defined port for previews,
           # and show it in IDX's web preview panel
-          command = [ "node" "index.js" "$PORT" ];
+          command = [ "nodemon" "index.js" "$PORT" ];
           manager = "web";
           env = {
             # Environment variables to set for your server
